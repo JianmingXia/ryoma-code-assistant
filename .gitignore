@@ -1,0 +1,6 @@
+# AI Assistant Configuration
+.claude/
+.agent/
+
+# macOS
+.DS_Store

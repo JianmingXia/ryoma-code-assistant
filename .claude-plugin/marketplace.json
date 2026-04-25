@@ -1,0 +1,13 @@
+{
+  "name": "ryoma-code-assistant",
+  "owner": {
+    "name": "ryoma"
+  },
+  "plugins": [
+    {
+      "name": "git-commit",
+      "source": "./skills/git-commit",
+      "description": "Adds a /git-commit skill for version control"
+    }
+  ]
+}
