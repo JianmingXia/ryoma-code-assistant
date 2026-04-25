@@ -1,13 +1,21 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ryoma-code-assistant",
+  "description": "code assistant",
   "owner": {
     "name": "ryoma"
+  },
+  "metadata": {
+    "description": "code assistant: skills, mcp and so on",
+    "version": "0.0.1"
   },
   "plugins": [
     {
       "name": "git-commit",
+      "description": "Adds a /git-commit skill for version control",
+      "category": "development",
       "source": "./skills/git-commit",
-      "description": "Adds a /git-commit skill for version control"
+      "homepage": "https://github.com/JianmingXia/ryoma-code-assistant"
     }
   ]
 }
