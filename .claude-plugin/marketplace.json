@@ -14,7 +14,9 @@
       "name": "git-commit",
       "description": "Adds a /git-commit skill for version control",
       "category": "development",
-      "source": "./skills/git-commit",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/git-commit"],
       "homepage": "https://github.com/JianmingXia/ryoma-code-assistant"
     }
   ]
