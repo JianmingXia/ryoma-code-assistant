@@ -6,8 +6,7 @@
     "name": "ryoma"
   },
   "metadata": {
-    "description": "code assistant: skills, mcp and so on",
-    "version": "0.0.1"
+    "description": "code assistant: skills, mcp and so on"
   },
   "plugins": [
     {
@@ -15,6 +14,7 @@
       "description": "code assistant: git-commit, go-code-review and so on",
       "category": "development",
       "source": "./",
+      "version": "0.0.1",
       "strict": false
     }
   ]
