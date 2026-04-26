@@ -11,13 +11,11 @@
   },
   "plugins": [
     {
-      "name": "git-commit",
-      "description": "Adds a /git-commit skill for version control",
+      "name": "ryoma-code-assistant",
+      "description": "code assistant: git-commit, go-code-review and so on",
       "category": "development",
       "source": "./",
-      "strict": false,
-      "skills": ["./skills/git-commit"],
-      "homepage": "https://github.com/JianmingXia/ryoma-code-assistant"
+      "strict": false
     }
   ]
 }
