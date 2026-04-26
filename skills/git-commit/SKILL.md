@@ -17,8 +17,6 @@ Create standardized, semantic git commits using the Conventional Commits specifi
 <type>[optional scope]: <description>
 
 [optional body]
-
-[optional footer(s)]
 ```
 
 ## Commit Types
@@ -39,14 +37,10 @@ Create standardized, semantic git commits using the Conventional Commits specifi
 
 ## Breaking Changes
 
+Use the exclamation mark after type/scope for breaking changes:
+
 ```
-# Exclamation mark after type/scope
 feat!: remove deprecated endpoint
-
-# BREAKING CHANGE footer
-feat: allow config to extend other configs
-
-BREAKING CHANGE: `extends` key behavior changed
 ```
 
 ## Workflow
@@ -96,13 +90,11 @@ Analyze the diff to determine:
 # Single line
 git commit -m "<type>[scope]: <description>"
 
-# Multi-line with body/footer
+# Multi-line with body only
 git commit -m "$(cat <<'EOF'
 <type>[scope]: <description>
 
 <optional body>
-
-<optional footer>
 EOF
 )"
 ```
@@ -114,6 +106,7 @@ EOF
 - Imperative mood: "fix bug" not "fixes bug"
 - Reference issues: `Closes #123`, `Refs #456`
 - Keep description under 72 characters
+- Do not add footer trailers such as `Co-Authored-By`
 
 ## Git Safety Protocol
 
